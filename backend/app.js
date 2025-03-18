@@ -1,0 +1,14 @@
+const express = require('express');
+
+const app = express();
+const port = 3000 || process.env.PORT;
+
+app.get('/', (req, res) => {
+  res.status(200).json({
+    message: 'Musicalizar está on!',
+  });
+});
+
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
+});
