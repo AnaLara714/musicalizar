@@ -47,3 +47,8 @@ model Matricula {
   CPF       Aluno  @relation(fields: [cpf_aluno], references: [CPF])
   id        Curso  @relation(fields: [id_curso], references: [id])
 }
+
+model Gerenciador {
+  email    String @id @unique
+  password String
+}

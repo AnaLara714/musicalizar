@@ -1,11 +1,13 @@
-const express = require('express');
+const express = require("express");
 
 const app = express();
 const port = 3000 || process.env.PORT;
 
-app.get('/', (req, res) => {
+app.use(express.json());
+
+app.get("/", (req, res) => {
   res.status(200).json({
-    message: 'Musicalizar está on!',
+    message: "Musicalizar está on!",
   });
 });
 
