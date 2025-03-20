@@ -3,14 +3,12 @@ import logo from "../assets/MUSICALIZAR.svg";
 function Header() {
   return (
     <header className="bg-black text-white">
-      <div className="container mx-auto flex items-center justify-between h-36 px-4">
+      <div className="container mx-auto flex items-center justify-between h-36 px-4 py-4 flex-col lg:flex-row">
         
-        {/* Logo */}
         <a href="/" className="flex items-center">
           <img src={logo} alt="Logo do Musicalizar" className="h-5" />
         </a>
 
-        {/* Navegação */}
         <nav>
           <ul className="flex gap-8 text-lg">
             <li><a href="#" className="hover:text-stone-500">Conheça nós</a></li>
