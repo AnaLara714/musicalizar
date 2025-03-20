@@ -1,3 +1,4 @@
+import CoursesSection from "./components/CoursesSection"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import SectionAboutUs from "./components/SectionAboutUs"
@@ -8,6 +9,7 @@ function App() {
     <div className="flex flex-col h-screen ">
       <Header />
       <SectionAboutUs />
+      <CoursesSection />
       <Footer />
     </div>
   )
