@@ -13,10 +13,10 @@ function Header() {
         {/* Navegação */}
         <nav>
           <ul className="flex gap-8 text-lg">
-            <li><a href="#" className="hover:text-stone-500">Conheça nós</a></li>
-            <li><a href="#" className="hover:text-stone-500">Cursos</a></li>
-            <li><a href="#" className="hover:text-stone-500">Contato</a></li>
-            <li><a href="#" className="hover:text-stone-500">Localização</a></li>
+            <li><a href="#" className="hover:text-stone-500 text-[16px]">Conheça nós</a></li>
+            <li><a href="#" className="hover:text-stone-500 text-[16px]">Cursos</a></li>
+            <li><a href="#" className="hover:text-stone-500 text-[16px]">Contato</a></li>
+            <li><a href="#" className="hover:text-stone-500 text-[16px]">Localização</a></li>
           </ul>
         </nav>
 
