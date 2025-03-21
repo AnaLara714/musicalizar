@@ -18,7 +18,7 @@ const loginManager = async (req, res) => {
 
   try {
     const manager = await login(email, password);
-    req.session.userId = manager._id;
+    req.session.userId = manager.id;
     res.status(200).json({ message: "Login successfull" });
   } catch (error) {
     res.status(401).json({ message: error.message });

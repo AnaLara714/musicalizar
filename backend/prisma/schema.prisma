@@ -13,6 +13,13 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum Niveis {
+  Iniciante
+  Basico
+  Intermediario
+  Avancado
+}
+
 model Aluno {
   CPF       String      @id @unique
   nome      String
@@ -27,7 +34,6 @@ model Curso {
   id        Int         @id @default(autoincrement())
   nome      String
   prof      String
-  nivel     String
   descricao String
   num_vagas Int
   matricula Matricula[]
@@ -38,6 +44,7 @@ model Turma {
   id_turma Int    @id @default(autoincrement())
   id_curso Int
   horario  String
+  nivel    Niveis
   id       Curso  @relation(fields: [id_curso], references: [id])
 }
 
@@ -49,6 +56,7 @@ model Matricula {
 }
 
 model Gerenciador {
-  email    String @id @unique
+  id       Int    @id @default(autoincrement())
+  email    String @unique
   password String
 }

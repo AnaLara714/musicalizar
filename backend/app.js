@@ -5,6 +5,7 @@ const session = require("express-session");
 
 const app = express();
 const authRoutes = require("./src/routes/authRoutes");
+const coursesRoutes = require("./src/routes/courseRoutes");
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
@@ -24,6 +25,7 @@ app.use(
 );
 
 app.use("/api/auth", authRoutes);
+app.use("/api/courses", coursesRoutes);
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
