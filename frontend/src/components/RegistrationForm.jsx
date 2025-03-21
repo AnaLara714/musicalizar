@@ -44,7 +44,7 @@ function RegistrationForm() {
   return (
     <div className="bg-[#6BE4FF] py-16 px-4">
       <div className="max-w-2xl mx-auto">
-        <h2 className="text-3xl font-bold uppercase text-center mb-6">Inscrições Abertas</h2>
+        <h2 className="text-xl font-bold uppercase text-center mb-6 md:text-3xl">Inscrições Abertas</h2>
 
         <p className="text-center mb-8">
           Preecha o formulário abaixo para se inscrever em um curso e musicalizar sua vida.
