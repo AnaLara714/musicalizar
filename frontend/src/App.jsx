@@ -1,3 +1,5 @@
+
+import Contact from "./components/Contact"
 import CoursesSection from "./components/CoursesSection"
 import FAQSection from "./components/FAQSection"
 import Footer from "./components/Footer"
@@ -14,9 +16,10 @@ function App() {
       <CoursesSection />
       <RegistrationForm />
       <FAQSection />
+      <Contact/>
       <Footer />
     </div>
   )
-}
+};
 
 export default App
