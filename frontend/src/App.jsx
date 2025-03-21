@@ -1,6 +1,7 @@
 import CoursesSection from "./components/CoursesSection"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
+import RegistrationForm from "./components/RegistrationForm"
 import SectionAboutUs from "./components/SectionAboutUs"
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <SectionAboutUs />
       <CoursesSection />
+      <RegistrationForm />
       <Footer />
     </div>
   )
