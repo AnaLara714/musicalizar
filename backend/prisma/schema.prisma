@@ -12,3 +12,51 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+enum Niveis {
+  Iniciante
+  Basico
+  Intermediario
+  Avancado
+}
+
+model Aluno {
+  CPF       String      @id @unique
+  nome      String
+  data_nasc DateTime
+  rua       String
+  bairro    String
+  numero    Int
+  matricula Matricula[]
+}
+
+model Curso {
+  id        Int         @id @default(autoincrement())
+  nome      String
+  prof      String
+  descricao String
+  num_vagas Int
+  matricula Matricula[]
+  turma     Turma[]
+}
+
+model Turma {
+  id_turma Int    @id @default(autoincrement())
+  id_curso Int
+  horario  String
+  nivel    Niveis
+  id       Curso  @relation(fields: [id_curso], references: [id])
+}
+
+model Matricula {
+  id_curso  Int    @id
+  cpf_aluno String
+  CPF       Aluno  @relation(fields: [cpf_aluno], references: [CPF])
+  id        Curso  @relation(fields: [id_curso], references: [id])
+}
+
+model Gerenciador {
+  id       Int    @id @default(autoincrement())
+  email    String @unique
+  password String
+}
