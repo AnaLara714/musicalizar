@@ -15,7 +15,7 @@ function SectionAboutUs() {
             className="w-full aspect-video"
             src="https://www.youtube.com/embed/PivRprIffe4"
             title="Vídeo da Escola de Música"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; compute-pressure"
             allowFullScreen>
           </iframe>
         </div>
