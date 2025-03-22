@@ -6,7 +6,7 @@ import EmailForm from './EmailForm';
 
 export default function Contact() {
   return (
-    <div className='bg-[#6BE4FF] mx-auto py-16 px-4'>
+    <div className='bg-[#6BE4FF] py-16 px-4'>
     <div className="max-w-3xl mx-auto">
       {}
       <h1 className="font-nerko text-4xl uppercase text-center">
