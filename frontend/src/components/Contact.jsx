@@ -6,19 +6,20 @@ import EmailForm from './EmailForm';
 
 export default function Contact() {
   return (
-    <div className=" bg-[#6BE4FF] flex flex-col items-center gap-6 p-4">
+    <div className='bg-[#6BE4FF] mx-auto py-16 px-4'>
+    <div className="max-w-3xl mx-auto">
       {}
       <h1 className="font-nerko text-4xl uppercase text-center">
         Entre em contato
       </h1>
 
       {}
-      <p className="w-[850px] text-center text-gray-600">"Descubra o poder da música na Escola Musicalizar! 🎶 Entre em contato conosco e transforme sua paixão em melodia. Deixe-nos guiar você em uma jornada sonora única, onde cada nota conta uma história. Vamos criar harmonia juntos!"?
+      <p className="text-center text-gray-600 ">"Descubra o poder da música na Escola Musicalizar! 🎶 Entre em contato conosco e transforme sua paixão em melodia. Deixe-nos guiar você em uma jornada sonora única, onde cada nota conta uma história. Vamos criar harmonia juntos!"?
       </p>
 
       {}
-      <div className="flex flex-row justify-around items-center gap-4">
-        <div className="flex items-center gap-2">
+      <div className="flex flex-row justify-around items-center gap-4 mb-8">
+        <div className="flex items-center gap-2 ">
           <FaWhatsapp className="" size={24} />
           <p>(88) 49028922</p>
         </div>
@@ -32,6 +33,7 @@ export default function Contact() {
       <Card>
         <EmailForm />
       </Card>
+    </div>
     </div>
   );
 }
