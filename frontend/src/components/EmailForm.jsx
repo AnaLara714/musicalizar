@@ -8,7 +8,7 @@ export default function EmailForm() {
     };
 
     return (
-        <form className="w-[850px] h-[284.1]" onSubmit={handleSubmit}>
+        <form className="max-w-3xl mx-auto" onSubmit={handleSubmit}>
             {}
             <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
