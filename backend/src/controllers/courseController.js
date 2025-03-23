@@ -24,7 +24,6 @@ const createCourseHandler = async (req, res) => {
 const getCourseHandler = async (req, res) => {
   try {
     const courses = await getCourses();
-    console.log(await courses);
     res.status(200).json({ courses });
   } catch (error) {
     res.status(400).json({ message: error.message });
