@@ -8,17 +8,15 @@ export default function Contact() {
   return (
     <div className='bg-[#6BE4FF] py-16 px-4'>
     <div className="max-w-3xl mx-auto">
-      {}
-      <h1 className="font-nerko text-4xl uppercase text-center">
+
+      <h1 className="font-nerko text-xl uppercase text-center md:text-3xl">
         Entre em contato
       </h1>
 
-      {}
       <p className="text-center text-gray-600 ">"Descubra o poder da música na Escola Musicalizar! 🎶 Entre em contato conosco e transforme sua paixão em melodia. Deixe-nos guiar você em uma jornada sonora única, onde cada nota conta uma história. Vamos criar harmonia juntos!"?
       </p>
 
-      {}
-      <div className="flex flex-row justify-around items-center gap-4 mb-8">
+      <div className="flex flex-col justify-around items-center gap-4 my-8 md:flex-row">
         <div className="flex items-center gap-2 ">
           <FaWhatsapp className="" size={24} />
           <p>(88) 49028922</p>

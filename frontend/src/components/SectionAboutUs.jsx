@@ -2,7 +2,7 @@ function SectionAboutUs() {
   return (
     <div className="bg-[#6BE4FF] min-h-screen flex justify-center items-center p-4">
       <div className="relative max-w-6xl w-full p-8 bg-[#6BE4FF]">
-        <h1 className="text-center text-xl font-bold uppercase mb-4 md:text-3xl">Escola de Música Musicalizar</h1>
+        <h1 className="text-center text-xl font-nerko uppercase mb-4 md:text-3xl">Escola de Música Musicalizar</h1>
 
         <p className="text-center max-w-3xl mx-auto mb-8">
           A Escola de Música Maestro José Wilson Brasil – Escola de Música de Sobral é um equipamento mantido pela Prefeitura de Sobral e se presta a oferecer aulas de prática instrumental e vocal a pessoas a partir dos seis anos de idade. Seus cursos tem duração de dois anos.
