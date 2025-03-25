@@ -19,7 +19,7 @@ function CoursesSection() {
   }, []);
 
   return (
-    <div className="bg-[#6BE4FF] py-16 px-4">
+    <div id="cursos" className="bg-[#6BE4FF] py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-xl font-nerko uppercase text-center mb-12 md:text-3xl">Nossos Cursos</h2>
 
