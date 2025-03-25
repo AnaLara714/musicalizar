@@ -9,7 +9,6 @@ const addCourse = async (name, teacher, description, num_places, classes) => {
 };
 
 const getCourses = async () => {
-  console.log(await findCourses());
   return findCourses();
 };
 

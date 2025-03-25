@@ -30,7 +30,7 @@ function FAQSection() {
   return (
     <div className="bg-[#6BE4FF] py-16 px-4">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-xl font-bold uppercase text-center mb-6 md:text-3xl">Dúvidas Frequentes</h2>
+        <h2 className="text-xl font-nerko uppercase text-center mb-6 md:text-3xl">Dúvidas Frequentes</h2>
 
         <p className="text-center mb-8">
           Confira as respostas para dúvidas mais comuns.

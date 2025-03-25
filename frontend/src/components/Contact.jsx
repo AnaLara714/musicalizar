@@ -36,5 +36,6 @@ export default function Contact() {
         </Card>
       </div>
     </div>
+    </div>
   );
 }

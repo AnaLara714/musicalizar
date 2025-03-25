@@ -3,8 +3,9 @@ const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 const findCourses = async () => {
-  console.log(await prisma.curso.findMany());
-  return prisma.curso.findMany();
+  return prisma.curso.findMany({
+    include: { turma: true },
+  });
 };
 
 const createCourse = async (nome, prof, descricao, num_vagas, turma = []) => {
