@@ -42,7 +42,7 @@ function RegistrationForm() {
   };
 
   return (
-    <div className="bg-[#6BE4FF] py-16 px-4">
+    <div  className="bg-[#6BE4FF] py-16 px-4">
       <div className="max-w-2xl mx-auto">
         <h2 className="text-xl font-bold uppercase text-center mb-6 md:text-3xl">Inscrições Abertas</h2>
 

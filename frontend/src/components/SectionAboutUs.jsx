@@ -1,6 +1,6 @@
 function SectionAboutUs() {
   return (
-    <div className="bg-[#6BE4FF] min-h-screen flex justify-center items-center p-4">
+    <div id="conheça-nos" className="bg-[#6BE4FF] min-h-screen flex justify-center items-center p-4">
       <div className="relative max-w-6xl w-full p-8 bg-[#6BE4FF]">
         <h1 className="text-center text-xl font-bold uppercase mb-4 md:text-3xl">Escola de Música Musicalizar</h1>
 
@@ -10,7 +10,7 @@ function SectionAboutUs() {
           As matrículas são abertas semestralmente para os 20 cursos oferecidos. <a href="#" className="underline">Não existe nenhum tipo de seleção ou reserva</a> de vagas que são preenchidas por ordem de chegada. Existe apenas uma prioridade no atendimento de alunos(as) das escolas públicas municipais de Sobral e estaduais de toda a região.
         </p>
 
-        <div className="max-w-lg mx-auto bg-white border-r-8 border-b-8 border-black mb-8 overflow-hidden">
+        <div  className="max-w-lg mx-auto bg-white border-r-8 border-b-8 border-black mb-8 overflow-hidden">
           <iframe
             className="w-full aspect-video"
             src="https://www.youtube.com/embed/PivRprIffe4"
