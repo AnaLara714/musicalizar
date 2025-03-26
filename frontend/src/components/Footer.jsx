@@ -92,7 +92,7 @@ export default function Footer() {
         </div>
 
         <div className="text-center font-semibold mt-2 cursor-pointer">
-          <p onClick={() => navigate("/manager")}>Gerenciar</p>
+          <p onClick={() => navigate("/login")}>Gerenciar</p>
           <p onClick={() => navigate("/")}>Página Inicial</p>
         </div>
       </div>
