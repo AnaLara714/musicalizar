@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
-function PasswordInput() {
+function PasswordInput({password, setPassword}) {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
@@ -10,6 +10,8 @@ function PasswordInput() {
         type={showPassword ? "text" : "password"}
         className="border bg-gray-200 border-gray-200 rounded-lg h-[37px] mb-4 w-full pl-2 pr-10"
         placeholder="Digite sua senha"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
       />
       <button
         type="button"
