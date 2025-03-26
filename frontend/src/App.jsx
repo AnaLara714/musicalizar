@@ -1,27 +1,15 @@
-
-import Contact from "./components/Contact"
-import CoursesSection from "./components/CoursesSection"
-import FAQSection from "./components/FAQSection"
-import Footer from "./components/Footer"
-import Header from "./components/Header"
-import Banner from "./components/Banner"
-import RegistrationForm from "./components/RegistrationForm"
-import SectionAboutUs from "./components/SectionAboutUs"
+import { BrowserRouter as Router } from "react-router-dom";
+import { AppRoutes } from "./routes/Routes";
+import { ScrollProvider } from "./context/ScrollContext";
 
 function App() {
-
   return (
-    <div className="flex flex-col">
-      <Header />
-      <Banner />
-      <SectionAboutUs />
-      <CoursesSection />
-      <RegistrationForm />
-      <FAQSection />
-      <Contact/>
-      <Footer />
-    </div>
-  )
-};
+    <Router>
+      <ScrollProvider>
+        <AppRoutes />
+      </ScrollProvider>
+    </Router>
+  );
+}
 
-export default App
+export default App;
