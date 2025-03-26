@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/MUSICALIZAR.svg";
 import { useNavigate } from "react-router-dom";
 import { useScroll } from "../context/ScrollContext";
@@ -54,9 +55,8 @@ function Footer() {
           </div>
         </div>
 
-        <div className="text-center font-semibold mt-2 cursor-pointer flex flex-col">
-          <p onClick={() => navigate("/manager")}>Gerenciar</p>
-          <p onClick={() => navigate("/")}>Página Inicial</p>
+        <div className="text-center font-semibold mt-2">
+          <p>Gerenciar</p>
         </div>
       </div>
     </footer>
