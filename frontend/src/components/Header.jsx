@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import logo from "../assets/MUSICALIZAR.svg";
 import { useScroll } from "../context/ScrollContext";
 
-function Header() {
+export default function Header() {
   const navigate = useNavigate();
   const { setScrollToId } = useScroll();
 
@@ -21,20 +21,20 @@ function Header() {
   };
 
   return (
-    <header className="bg-black text-white">
-      <div className="container mx-auto flex items-center justify-between h-36 px-4 py-4 flex-col lg:flex-row">
+    <header className="bg-black text-white ">
+      <div className="container mx-auto flex items-center justify-between h-20 px-4 py-4 flex-col lg:flex-row">
         <a href="/" className="flex items-center">
           <img src={logo} alt="Logo do Musicalizar" className="h-5" />
         </a>
 
         <nav>
-          <ul className="flex gap-8 text-lg">
+          <ul className="flex  gap-8 text-lg flex-wrap ">
             <li>
               <button
                 onClick={() => handleNavigation("about-us")}
                 className="hover:text-stone-500 text-[16px]"
               >
-                Conheça nós
+                Conheça-nos
               </button>
             </li>
             <li>
@@ -46,12 +46,12 @@ function Header() {
               </button>
             </li>
             <li>
-              <a
+              <button
                 onClick={() => handleNavigation("contact")}
                 className="hover:text-stone-500 text-[16px]"
               >
                 Contato
-              </a>
+              </button>
             </li>
             <li>
               <a
@@ -68,5 +68,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;

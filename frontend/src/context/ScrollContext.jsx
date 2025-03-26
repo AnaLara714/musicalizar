@@ -12,7 +12,11 @@ export const ScrollProvider = ({ children }) => {
       setTimeout(() => {
         const section = document.getElementById(scrollToId);
         if (section) {
-          section.scrollIntoView({ behavior: "smooth", block: "start" });
+          section.scrollIntoView({
+            top: 0,
+            behavior: "smooth",
+            block: "start",
+          });
           setScrollToId("");
         }
       }, 300);

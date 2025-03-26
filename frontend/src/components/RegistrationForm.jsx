@@ -2,18 +2,18 @@ import { useState } from "react";
 
 function RegistrationForm() {
   const [formData, setFormData] = useState({
-    fullName: '',
-    cpf: '',
-    birthDate: '',
-    street: '',
-    number: '',
-    neighborhood: '',
-    complement: '',
-    education: '',
-    grade: '',
-    course: '',
-    level: '',
-    classGroup: ''
+    fullName: "",
+    cpf: "",
+    birthDate: "",
+    street: "",
+    number: "",
+    neighborhood: "",
+    complement: "",
+    education: "",
+    grade: "",
+    course: "",
+    level: "",
+    classGroup: "",
   });
 
   const handleChange = (e) => {
@@ -25,35 +25,40 @@ function RegistrationForm() {
     e.preventDefault();
     console.log(formData);
     setFormData({
-      fullName: '',
-      cpf: '',
-      birthDate: '',
-      street: '',
-      number: '',
-      neighborhood: '',
-      complement: '',
-      education: '',
-      grade: '',
-      course: '',
-      level: '',
-      classGroup: ''
+      fullName: "",
+      cpf: "",
+      birthDate: "",
+      street: "",
+      number: "",
+      neighborhood: "",
+      complement: "",
+      education: "",
+      grade: "",
+      course: "",
+      level: "",
+      classGroup: "",
     });
-    alert('Inscrição realizada com sucesso!');
+    alert("Inscrição realizada com sucesso!");
   };
 
   return (
-    <div  className="bg-[#6BE4FF] py-16 px-4">
+    <div className="bg-[#6BE4FF] py-16 px-4">
       <div className="max-w-2xl mx-auto">
-        <h2 className="text-xl font-nerko uppercase text-center mb-6 md:text-3xl">Inscrições Abertas</h2>
+        <h2 className="text-2xl font-nerko uppercase text-center mb-6 md:text-3xl">
+          Inscrições Abertas
+        </h2>
 
         <p className="text-center mb-8">
-          Preecha o formulário abaixo para se inscrever em um curso e musicalizar sua vida.
+          Preecha o formulário abaixo para se inscrever em um curso e
+          musicalizar sua vida.
         </p>
 
         <div className="bg-white rounded-xl p-8 shadow-lg">
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
-              <label htmlFor="fullName" className="block mb-2 font-medium">Nome completo</label>
+              <label htmlFor="fullName" className="block mb-2 font-medium">
+                Nome completo
+              </label>
               <input
                 type="text"
                 id="fullName"
@@ -67,7 +72,9 @@ function RegistrationForm() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div>
-                <label htmlFor="cpf" className="block mb-2 font-medium">CPF</label>
+                <label htmlFor="cpf" className="block mb-2 font-medium">
+                  CPF
+                </label>
                 <input
                   type="text"
                   id="cpf"
@@ -79,7 +86,9 @@ function RegistrationForm() {
                 />
               </div>
               <div>
-                <label htmlFor="birthDate" className="block mb-2 font-medium">Data de Nascimento</label>
+                <label htmlFor="birthDate" className="block mb-2 font-medium">
+                  Data de Nascimento
+                </label>
                 <input
                   type="date"
                   id="birthDate"
@@ -94,7 +103,9 @@ function RegistrationForm() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div>
-                <label htmlFor="street" className="block mb-2 font-medium">Rua</label>
+                <label htmlFor="street" className="block mb-2 font-medium">
+                  Rua
+                </label>
                 <input
                   type="text"
                   id="street"
@@ -106,7 +117,9 @@ function RegistrationForm() {
                 />
               </div>
               <div>
-                <label htmlFor="number" className="block mb-2 font-medium">Número</label>
+                <label htmlFor="number" className="block mb-2 font-medium">
+                  Número
+                </label>
                 <input
                   type="text"
                   id="number"
@@ -121,7 +134,12 @@ function RegistrationForm() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div>
-                <label htmlFor="neighborhood" className="block mb-2 font-medium">Bairro</label>
+                <label
+                  htmlFor="neighborhood"
+                  className="block mb-2 font-medium"
+                >
+                  Bairro
+                </label>
                 <input
                   type="text"
                   id="neighborhood"
@@ -133,7 +151,9 @@ function RegistrationForm() {
                 />
               </div>
               <div>
-                <label htmlFor="complement" className="block mb-2 font-medium">Complemento</label>
+                <label htmlFor="complement" className="block mb-2 font-medium">
+                  Complemento
+                </label>
                 <input
                   type="text"
                   id="complement"
@@ -147,7 +167,9 @@ function RegistrationForm() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div>
-                <label htmlFor="education" className="block mb-2 font-medium">Escolaridade</label>
+                <label htmlFor="education" className="block mb-2 font-medium">
+                  Escolaridade
+                </label>
                 <input
                   type="text"
                   id="education"
@@ -159,7 +181,9 @@ function RegistrationForm() {
                 />
               </div>
               <div>
-                <label htmlFor="grade" className="block mb-2 font-medium">Série</label>
+                <label htmlFor="grade" className="block mb-2 font-medium">
+                  Série
+                </label>
                 <input
                   type="text"
                   id="grade"
@@ -173,7 +197,9 @@ function RegistrationForm() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               <div>
-                <label htmlFor="course" className="block mb-2 font-medium">Curso</label>
+                <label htmlFor="course" className="block mb-2 font-medium">
+                  Curso
+                </label>
                 <select
                   id="course"
                   name="course"
@@ -185,11 +211,15 @@ function RegistrationForm() {
                   <option value="">Selecione</option>
                   <option value="guitarra">Guitarra Elétrica</option>
                   <option value="baixo">Contrabaixo Elétrico</option>
-                  <option value="musica-infantil">Musicalização Infantil</option>
+                  <option value="musica-infantil">
+                    Musicalização Infantil
+                  </option>
                 </select>
               </div>
               <div>
-                <label htmlFor="level" className="block mb-2 font-medium">Nível</label>
+                <label htmlFor="level" className="block mb-2 font-medium">
+                  Nível
+                </label>
                 <select
                   id="level"
                   name="level"
@@ -207,7 +237,9 @@ function RegistrationForm() {
             </div>
 
             <div className="mb-8">
-              <label htmlFor="classGroup" className="block mb-2 font-medium">Turma</label>
+              <label htmlFor="classGroup" className="block mb-2 font-medium">
+                Turma
+              </label>
               <select
                 id="classGroup"
                 name="classGroup"
@@ -232,7 +264,7 @@ function RegistrationForm() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default RegistrationForm
+export default RegistrationForm;

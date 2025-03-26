@@ -1,7 +1,7 @@
 import { useState } from "react";
 import CourseCard from "./CourseCard";
 
-function CoursesSection() {
+export default function CoursesSection() {
   const [courses, setCourses] = useState([]);
 
   async function fetchCourses() {
@@ -21,7 +21,9 @@ function CoursesSection() {
   return (
     <div id="cursos" className="bg-[#6BE4FF] py-16 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-xl font-nerko uppercase text-center mb-12 md:text-3xl">Nossos Cursos</h2>
+        <h2 className="text-2xl font-nerko uppercase text-center mb-12 md:text-3xl">
+          Nossos Cursos
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {courses.map((course, index) => (
@@ -30,7 +32,5 @@ function CoursesSection() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-
-export default CoursesSection

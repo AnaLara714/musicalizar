@@ -1,23 +1,33 @@
 function SectionAboutUs() {
   return (
-    <div id="conheça-nos" className="bg-[#6BE4FF] min-h-screen flex justify-center items-center p-4">
+    <div
+      id="conheça-nos"
+      className="bg-[#6BE4FF] min-h-screen flex justify-center items-center p-4"
+    >
       <div className="relative max-w-6xl w-full p-8 bg-[#6BE4FF]">
-        <h1 className="text-center text-xl font-nerko uppercase mb-4 md:text-3xl">Escola de Música Musicalizar</h1>
+        <h1 className="text-center text-2xl font-nerko uppercase mb-4 md:text-3xl">
+          Conheça-nos
+        </h1>
 
-        <p className="text-center max-w-3xl mx-auto mb-8">
-          A Escola de Música Maestro José Wilson Brasil – Escola de Música de Sobral é um equipamento mantido pela Prefeitura de Sobral e se presta a oferecer aulas de prática instrumental e vocal a pessoas a partir dos seis anos de idade. Seus cursos tem duração de dois anos.
-
-          As matrículas são abertas semestralmente para os 20 cursos oferecidos. <a href="#" className="underline">Não existe nenhum tipo de seleção ou reserva</a> de vagas que são preenchidas por ordem de chegada. Existe apenas uma prioridade no atendimento de alunos(as) das escolas públicas municipais de Sobral e estaduais de toda a região.
+        <p className="text-justify max-w-3xl mx-auto mb-8">
+          Somos uma escola dedicada a despertar talentos e tornar o aprendizado
+          musical acessível, envolvente e inspirador. Com professores
+          experientes e um ambiente acolhedor, oferecemos cursos para todas as
+          idades e níveis, ajudando cada aluno a se expressar, desenvolver sua
+          criatividade e viver a magia da música. Seja para aprender um novo
+          instrumento, aprimorar sua técnica ou simplesmente se conectar com a
+          arte sonora, o Musicalizar é o lugar ideal para sua jornada musical.
+          🎶✨
         </p>
 
-        <div  className="max-w-lg mx-auto bg-white border-r-8 border-b-8 border-black mb-8 overflow-hidden">
+        <div className="max-w-lg mx-auto bg-white border-r-8 border-b-8 border-black mb-8 overflow-hidden">
           <iframe
             className="w-full aspect-video"
             src="https://www.youtube.com/embed/PivRprIffe4"
             title="Vídeo da Escola de Música"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; compute-pressure"
-            allowFullScreen>
-          </iframe>
+            allowFullScreen
+          ></iframe>
         </div>
 
         <img
@@ -37,7 +47,7 @@ function SectionAboutUs() {
         />
       </div>
     </div>
-  )
+  );
 }
 
-export default SectionAboutUs
+export default SectionAboutUs;

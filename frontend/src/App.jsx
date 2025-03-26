@@ -1,11 +1,13 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import { AppRoutes } from "./routes/Routes";
 import { ScrollProvider } from "./context/ScrollContext";
+import ScrollToTop from "./components/ScrollTop";
 
 function App() {
   return (
     <Router>
       <ScrollProvider>
+        <ScrollToTop />
         <AppRoutes />
       </ScrollProvider>
     </Router>

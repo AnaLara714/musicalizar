@@ -2,7 +2,7 @@ import Login from "../components/Login";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-function LoginSectretaria() {
+export default function LoginPage() {
   return (
     <div className="flex flex-col">
       <Header />
@@ -11,5 +11,3 @@ function LoginSectretaria() {
     </div>
   );
 }
-
-export default LoginSectretaria;

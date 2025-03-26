@@ -7,7 +7,7 @@ import Banner from "../components/Banner";
 import RegistrationForm from "../components/RegistrationForm";
 import SectionAboutUs from "../components/SectionAboutUs";
 
-function Home() {
+export default function HomePage() {
   return (
     <div className="flex flex-col">
       <Header />
@@ -31,5 +31,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

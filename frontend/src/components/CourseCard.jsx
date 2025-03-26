@@ -1,4 +1,4 @@
-function CourseCard({ course }) {
+export default function CourseCard({ course }) {
   const { nome, prof, descricao, num_vagas, turma } = course;
 
   return (
@@ -15,14 +15,14 @@ function CourseCard({ course }) {
 
       {turma.map((turmaInfo, index) => (
         <div key={index}>
-          <p className="font-medium mb-1">Turma {index + 1}: {turmaInfo.horario}</p>
+          <p className="font-medium mb-1">
+            Turma {index + 1}: {turmaInfo.horario}
+          </p>
           {index < turma.length - 1 && (
             <div className="h-px bg-red-300 w-full my-1"></div>
           )}
         </div>
       ))}
     </div>
-  )
+  );
 }
-
-export default CourseCard
