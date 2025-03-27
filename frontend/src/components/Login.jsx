@@ -24,7 +24,7 @@ export default function Login() {
           password,
         }),
       });
-      
+
       if (!response.ok) {
         throw new Error("Erro ao fazer login. Verifique suas credenciais.");
       }
@@ -41,7 +41,7 @@ export default function Login() {
   return (
     <div className="h-screen bg-[#7FE7FF] p-4 sm:p-6 md:p-8 lg:px-12 xl:px-40 flex justify-center items-center">
       <Card>
-        <div className="h-[301px] flex justify-center flex-col ">
+        <div className="w-full sm:w-[400px] md:w-[444px] h-auto min-h-[200px] md:h-[301px] flex justify-center flex-col">
           <h1 className="font-nerko text-4xl uppercase text-[36px] text-center">
             Login
           </h1>

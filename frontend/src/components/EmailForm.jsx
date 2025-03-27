@@ -9,12 +9,8 @@ export default function EmailForm() {
 
   return (
     <form className="max-w-3xl mx-auto" onSubmit={handleSubmit}>
-      {}
       <div>
-        <label
-          htmlFor="email"
-          className="block text-sm font-medium text-gray-700"
-        >
+        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
           Email
         </label>
         <input
@@ -26,12 +22,9 @@ export default function EmailForm() {
         />
       </div>
 
-      {}
+    
       <div>
-        <label
-          htmlFor="message"
-          className="block text-sm font-medium text-gray-700 my-2"
-        >
+        <label htmlFor="message" className="block text-sm font-medium text-gray-700 my-2">
           Mensagem
         </label>
         <textarea
@@ -43,7 +36,7 @@ export default function EmailForm() {
         ></textarea>
       </div>
 
-      {}
+      
       <div>
         <button
           type="submit"
