@@ -19,6 +19,7 @@ export default function Login() {
         headers: {
           "Content-Type": "application/json",
         },
+        credentials: "include",
         body: JSON.stringify({
           email,
           password,
@@ -54,10 +55,7 @@ export default function Login() {
             onChange={(e) => setEmail(e.target.value)}
           />
           <label className="block mb-2">Senha</label>
-          <PasswordInput
-            password={password}
-            setPassword={setPassword}
-          />
+          <PasswordInput password={password} setPassword={setPassword} />
           <button
             className="bg-orange-600 text-white font-bold p-2 rounded-lg "
             onClick={handleLogin}

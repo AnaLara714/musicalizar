@@ -12,6 +12,7 @@ export default function Header() {
 
   const handleLogout = () => {
     handleDeauthentication();
+    confirm("Usuário será deslogado");
     navigate("/");
   };
 
@@ -73,7 +74,10 @@ export default function Header() {
             </li>
             {isAuthenticated && (
               <li className="cursor-pointer hover:text-stone-500 text-[20px]">
-                <button onClick={handleLogout} className="flex items-center gap-2">
+                <button
+                  onClick={handleLogout}
+                  className="flex items-center gap-2"
+                >
                   Sair
                   <MdLogout size={24} onClick={() => navigate("/")} />
                 </button>

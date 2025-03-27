@@ -6,8 +6,11 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import RegistrationForm from "../components/RegistrationForm";
 import SectionAboutUs from "../components/SectionAboutUs";
+import { useContext } from "react";
+import { AuthContext } from "../context/AuthContext";
 
 export default function HomePage() {
+  const { isRegistration } = useContext(AuthContext);
   return (
     <div className="flex flex-col">
       <Header />
@@ -18,9 +21,11 @@ export default function HomePage() {
       <div id="courses">
         <CoursesSection />
       </div>
-      <div id="registration">
-        <RegistrationForm />
-      </div>
+      {isRegistration && (
+        <div id="registration">
+          <RegistrationForm />
+        </div>
+      )}
       <div id="faq">
         <FAQSection />
       </div>

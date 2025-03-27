@@ -45,7 +45,9 @@ model Turma {
   id_curso Int
   horario  String
   nivel    Niveis
-  id       Curso  @relation(fields: [id_curso], references: [id])
+  curso    Curso  @relation(fields: [id_curso], references: [id], onDelete: Cascade)
+
+  @@unique([id_curso, horario, nivel])
 }
 
 model Matricula {

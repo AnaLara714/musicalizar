@@ -9,7 +9,12 @@ const coursesRoutes = require("./src/routes/courseRoutes");
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    credentials: true,
+  })
+);
 
 app.use(
   session({
@@ -17,9 +22,9 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-      httpOnly: true, // Impede acesso do JS ao cookie
-      secure: false, // Deve ser 'true' em produção com HTTPS
-      sameSite: "lax", // Permite cookies apenas para navegação normal
+      httpOnly: true,
+      secure: false,
+      sameSite: "lax",
     },
   })
 );
