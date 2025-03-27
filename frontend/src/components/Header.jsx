@@ -32,7 +32,7 @@ export default function Header() {
             <li>
               <button
                 onClick={() => handleNavigation("about-us")}
-                className="hover:text-stone-500 text-[16px]"
+                className="hover:text-stone-500 text-[20px]"
               >
                 Conheça-nos
               </button>
@@ -40,7 +40,7 @@ export default function Header() {
             <li>
               <button
                 onClick={() => handleNavigation("courses")}
-                className="hover:text-stone-500 text-[16px]"
+                className="hover:text-stone-500 text-[20px]"
               >
                 Cursos
               </button>
@@ -48,7 +48,7 @@ export default function Header() {
             <li>
               <button
                 onClick={() => handleNavigation("contact")}
-                className="hover:text-stone-500 text-[16px]"
+                className="hover:text-stone-500 text-[20px]"
               >
                 Contato
               </button>
@@ -57,7 +57,7 @@ export default function Header() {
               <a
                 href="https://www.google.com.br/maps/?hl=pt-PT"
                 target="_blank"
-                className="hover:text-stone-500 text-[16px]"
+                className="hover:text-stone-500 text-[20px]"
               >
                 Localização
               </a>
