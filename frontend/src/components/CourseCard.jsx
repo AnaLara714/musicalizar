@@ -22,6 +22,7 @@ export default function CourseCard({ course, onDelete }) {
 
       {turma.map((turmaInfo, index) => (
         <div key={index}>
+          <p>{turmaInfo.nivel}</p>
           <p className="font-medium mb-1 border-b-2 border-[#EB8981] pb-1">
             Turma {index + 1}: {turmaInfo.horario}
           </p>
