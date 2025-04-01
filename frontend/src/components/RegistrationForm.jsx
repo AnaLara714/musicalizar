@@ -1,6 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function RegistrationForm() {
+  const [courses, setCourses] = useState([]);
+
+  async function fetchCourses() {
+    try {
+      const response = await fetch("http://localhost:3000/api/courses");
+      const data = await response.json();
+      setCourses(data.courses);
+    } catch (error) {
+      console.error("Erro ao buscar cursos:", error);
+    }
+  }
+
+  useEffect(() => {
+    fetchCourses();
+  }, []);
+
   const [formData, setFormData] = useState({
     fullName: "",
     cpf: "",
@@ -208,12 +224,11 @@ function RegistrationForm() {
                   className="w-full p-3 bg-gray-200 rounded"
                   required
                 >
-                  <option value="">Selecione</option>
-                  <option value="guitarra">Guitarra Elétrica</option>
-                  <option value="baixo">Contrabaixo Elétrico</option>
-                  <option value="musica-infantil">
-                    Musicalização Infantil
-                  </option>
+                  {courses.map((course) => (
+                    <option key={course.id} value={course.nome}>
+                      {course.nome}
+                    </option>
+                  ))}
                 </select>
               </div>
               <div>
@@ -229,9 +244,10 @@ function RegistrationForm() {
                   required
                 >
                   <option value="">Selecione</option>
-                  <option value="iniciante">Iniciante</option>
-                  <option value="intermediario">Intermediário</option>
-                  <option value="avancado">Avançado</option>
+                  <option value="Iniciante">Iniciante</option>
+                  <option value="Basico">Básico</option>
+                  <option value="Intermediario">Intermediário</option>
+                  <option value="Avancado">Avançado</option>
                 </select>
               </div>
             </div>

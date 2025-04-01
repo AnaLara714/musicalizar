@@ -16,7 +16,7 @@ export default function CourseCard({ course, onDelete }) {
 
       <p className="text-gray-700 mb-1">Professor: {prof}</p>
 
-      <p className="text-gray-600 mb-2 truncate">{descricao}</p>
+      <p className="text-gray-600 mb-2 wrapper">{descricao}</p>
 
       <p className="mb-2">{num_vagas} vagas</p>
 
